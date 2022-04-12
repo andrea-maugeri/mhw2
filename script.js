@@ -59,6 +59,9 @@ function displayWinner(winner){
 
 function restart(){
     start();
+    for(const key in answers) //cancello la mappa
+        delete answers[key];
+    console.log(answers);
     const result = document.querySelector('div#result');
     result.classList.add('hidden');
     for(const box of boxes){
