@@ -40,17 +40,14 @@
     opacity: 0.6 ;
 }
 
-button{
+#button{
     display: flex;
-    width: 660px; /*700(dimesione article)-40(20 px per lato)*/
-    margin:auto;
     height: 50px;
     justify-content: center;
     align-items: center;
     background-color: #cecece;
     font-size: 1em;
     cursor: pointer;
-    border: none;
 }
 button:hover{
     background-color: #e0e0e0;

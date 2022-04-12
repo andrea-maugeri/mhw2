@@ -1,7 +1,7 @@
 const answers  = {}; //mappa per tenere traccia delle risposte
 const boxes = document.querySelectorAll('.choice-grid div'); //lista di reference a tutte le caselle dichiarata globale dato che la userò in diverse funzioni
 start();//aggiungo i listener a tutti le caselle
-const button=document.querySelector('button'); //aggiungo il listener al button
+const button=document.querySelector('#button'); //aggiungo il listener al button
 button.addEventListener('click', restart);
 function start(){ //dichiaro una funzione per poter poi "riclicare" lo stesso codice nella funzione restart
   for (const box of boxes) {
