@@ -1,0 +1,62 @@
+.choice-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.choice-grid div{
+    display: flex;
+    flex-direction: column;
+    width: calc(32.5% - 22px); /*2bordo+10*2 padding*/
+    /*flex-grow: 1;*/
+    background-color: #f4f4f4;
+    border: 1px  solid #dcdcdc;
+    padding: 10px;
+    margin-bottom: 20px;
+   
+}
+
+@media (max-width: 700px){
+    article{
+        width: 95%;
+    }
+    header div{
+        display: none;
+    }
+}
+@media (max-width: 500px){
+    .choice-grid div{
+        width: calc(49% - 22px);
+    }
+}
+
+.choice-grid div.selected{
+    background-color:#cfe3ff;
+}
+
+.hidden{
+    display: none;
+}
+.opacity{
+    opacity: 0.6 ;
+}
+
+button{
+    display: flex;
+    width: 660px; /*700(dimesione article)-40(20 px per lato)*/
+    margin:auto;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #cecece;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+}
+button:hover{
+    background-color: #e0e0e0;
+}
+#result{
+    padding: 20px;
+    margin-top: 20px; /*si sommano agli altri 20 dei blocchi della griglia (margin collapsing)*/
+    margin-bottom: 20px;
+}
